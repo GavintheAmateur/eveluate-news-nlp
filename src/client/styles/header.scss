@@ -1,8 +1,16 @@
 header {
+    height: 8rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     padding: 10px 40px;
+
     h1 {
-        font: 48px bolder serif;
+        
+        font: 36px bolder serif;
+        margin:2rem auto;
+        color:gray;
     }
 }

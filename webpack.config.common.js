@@ -1,6 +1,7 @@
 const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const WorkboxPlugin = require('workbox-webpack-plugin')
 
 module.exports = {
     entry: './src/client/index.js',
@@ -30,5 +31,6 @@ module.exports = {
             inject: true,
             template: path.resolve(__dirname, 'src/client/views/index.html'),
         }),
+        new WorkboxPlugin.GenerateSW()
     ]
 }

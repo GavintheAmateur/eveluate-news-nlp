@@ -1,6 +1,6 @@
 import { validateUrl } from './js/urlChecker'
 import { handleSubmit } from './js/formHandler'
-import { renderResult } from './js/evaluationResultsRenderer'
+import { renderResult } from './js/results'
 
 import './styles/base.scss'
 import './styles/footer.scss'

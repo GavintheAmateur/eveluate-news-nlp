@@ -1,17 +1,22 @@
+$bg-start: #09203f;
+$bg-end: #537895;
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     align-items: center;
-    
+    background: linear-gradient(45deg,$bg-start,$bg-end);
 }
 
 main {
-    flex: 2;
-}
-
-section {
-    max-width: 800px;
-    margin: 50px auto;
+    width:100vw;
+    section {
+        width:80%;
+        margin: auto;
+        display:flex;
+        flex-direction: column;
+    }
     
 }
+

@@ -1,3 +1,9 @@
+strong {
+    font: 36px bolder serif;
+    margin:2rem auto;
+    color:white;
+}
+
 .evaluation {
     width: 80%;
     margin: auto;
@@ -7,24 +13,33 @@
     justify-content: center;
     text-align: center;
     
+    
+    table {
+        margin:2rem 0;
+        caption {
+            color: white;
+            font-size:x-large;
+            margin:.2rem;
+        }
 
-    strong {
-        font: 36px bolder serif;
+        thead {
+            background-color: gray;
+        }
     }
+  
+  
     .evaluation-summary {
+        display:table;
         width:100%;
-        background-color: green;
+        background-color: orange;
     }
 
     .evaluation-details {
         width:100%;
-        background-color: orange;
+        background-color: white;
         .evaluation-ledger {
-            border: 1px solid blue;
-            .evaluation-ledger-text {
-
-            }
-
+            border: 1px solid gray;
+            padding: 0.2rem 0;
         }
 
     }

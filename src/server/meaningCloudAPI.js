@@ -2,7 +2,7 @@ const key = '07decbaf0b113093a54df50422ffb030'
 const APIUrl = 'https://api.meaningcloud.com/sentiment-2.1?'
 const fetch = require("node-fetch")
 
-const analysisNewsFromUrl = async (url) => {
+let  analysisNewsFromUrl = async function (url) {
     query = {
         key: key,
         of: 'json',
