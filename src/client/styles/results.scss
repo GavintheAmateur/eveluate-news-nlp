@@ -1,0 +1,32 @@
+.evaluation {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
+    strong {
+        font: 36px bolder serif;
+    }
+    .evaluation-summary {
+        width:100%;
+        background-color: green;
+    }
+
+    .evaluation-details {
+        width:100%;
+        background-color: orange;
+        .evaluation-ledger {
+            border: 1px solid blue;
+            .evaluation-ledger-text {
+
+            }
+
+        }
+
+    }
+
+}

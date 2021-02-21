@@ -1,43 +1,368 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Test</title>
-        <link rel="stylesheet" href="/styles/resets.css">
-        <link rel="stylesheet" href="/styles/base.css">
-        <link rel="stylesheet" href="/styles/header.css">
-        <link rel="stylesheet" href="/styles/form.css">
-        <link rel="stylesheet" href="/styles/footer.css">
-    </head>
 
-    <body>
+<head>
+    <meta charset="utf-8">
+    <title>Evaluate News With NLP</title>
+</head>
 
-        <header>
-            <div class="">
-                Logo
+<body>
+
+    <header>
+        <h1 class="app-title">
+            🤖 Sentiment Analysis with a Single Link!
+        </h1>
+    </header>
+
+    <main>
+        <section>
+            <form class="" onsubmit="return handleSubmit(event)">
+                <input id="url" type="text" name="input"
+                    value="https://inshorts.com/en/news/tn-government-to-withdraw-cases-filed-against-over-26k-jallikattu-protesters-1613837848339"
+                    placeholder="Input news URL here:">
+                <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)"
+                    onsubmit="return handleSubmit(event)">
+            </form>
+        </section>
+
+
+        <section class="evaluation" id="results">
+            <strong>Evaluation Report</strong>
+            <div class="evaluation-summary">
+                <div class="evaluation-summary-polarity">positive</div>
+                <div class="evaluation-summary-confidence">94}</div>
+                <div class="evaluation-summary-irony">NONIRONIC}</div>
             </div>
-            <div class="">
-                navigation
+
+
+            <div class="evaluation-details">
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">toggle menuMenu</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">English</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">हिन्दी</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">Categories</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">All News</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">India</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">Business</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">Sports</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">World</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">Politics</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">Technology</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">Startup</div>
+                    <div class="evaluation-ledger-polarity">P</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">Entertainment</div>
+                    <div class="evaluation-ledger-polarity">P</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">Miscellaneous</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">Hatke</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">Science</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">Automobile</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">For the best experience use inshorts app on your smartphone
+                    </div>
+                    <div class="evaluation-ledger-polarity">P+</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">TN government to withdraw cases filed against over 26k
+                        Jallikattu protesters</div>
+                    <div class="evaluation-ledger-polarity">N</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">short by Sakshita Khosla / 09:47 pm on 20 Feb 2021,Saturday
+                    </div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">The government of Tamil Nadu has issued an order to withdraw
+                        the cases registered against 26,460 persons who were booked during the Jallikattu protest in
+                        January 2017.</div>
+                    <div class="evaluation-ledger-polarity">N</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">A total of 308 cases were filed across Tamil Nadu during the
+                        protests.</div>
+                    <div class="evaluation-ledger-polarity">N</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">Appropriate action to withdraw cases will be taken based on
+                        whether the case is under investigation or pending trial.</div>
+                    <div class="evaluation-ledger-polarity">P</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">short by Sakshita Khosla / 09:47 pm on 20 Feb</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">read more at The News Minute</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">For the best experience use inshorts app on your smartphone
+                    </div>
+                    <div class="evaluation-ledger-polarity">P+</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">inshorts medialabs pvt. ltd.</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">©COPYRIGHT 2021</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">Terms &amp; conditions</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">Privacy Policies</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">Editorial Policy</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">×</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">Contact Hiring Team</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">Contact Admin Team</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">Contact Marketing Team</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">Contact Editorial Team</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">Contact Sales Team</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
+                ,
+                <div class="evaluation-ledger">
+                    <div class="evaluation-ledger-text">Contact For Any Other Query</div>
+                    <div class="evaluation-ledger-polarity">NONE</div>
+                    <div class="evaluation-ledger-confidence">100</div>
+                    <div class="evaluation-ledger-agreement">AGREEMENT</div>
+                    <div class="evaluation-ledger-irony">undefined</div>
+                </div>
             </div>
-        </header>
+        </section>
+    </main>
 
-        <main>
-            <section>
-                <form class="" onsubmit="return handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return handleSubmit(event)" onsubmit="return handleSubmit(event)">
-                </form>
-            </section>
+    <footer>
+    </footer>
 
-            <section>
-                <strong>Form Results:</strong>
-                <div id="results"></div>
-            </section>
-        </main>
+</body>
+<script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js');
+        });
+    }
+</script>
 
-        <footer>
-            <p>This is a footer</p>
-        </footer>
-
-    </body>
 </html>

@@ -1,4 +1,4 @@
-import {handleSubmit} from '../src/client/js/formHandler'
+import {handleSubmit} from '../src/client/js/formHandler.js'
 
 describe(
     "Test suite for form submitting functionality",
